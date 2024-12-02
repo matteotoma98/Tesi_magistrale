@@ -1,0 +1,43 @@
+Procedura,Algoritmo,Best Params
+Grid Search,Random Forest,"{'criterion': 'entropy', 'max_depth': 15, 'n_estimators': 30}"
+Grid Search,SVM,"{'C': 10, 'kernel': 'rbf'}"
+Grid Search,KNN,{'n_neighbors': 3}
+Grid Search,ANN,"{'activation': 'relu', 'batch_size': 32, 'epochs': 20, 'optimizer': 'sgd'}"
+Random Search,Random Forest,"{'criterion': 'entropy', 'max_depth': 40, 'max_features': 7, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 69}"
+Random Search,SVM,"{'C': 3.41968636765253, 'kernel': 'rbf'}"
+Random Search,KNN,{'n_neighbors': 5}
+Random Search,ANN,"{'activation': 'relu', 'batch_size': 64, 'epochs': 20, 'neurons': 73, 'optimizer': 'sgd', 'patience': 12}"
+Hyperband,Random Forest,"{'max_depth': 38, 'max_features': 17, 'min_samples_split': 2, 'min_samples_leaf': 1, 'criterion': 'gini'}"
+Hyperband,SVM,"{'C': 0.0009677583709214056, 'gamma': 2.7871672491287605, 'kernel': 'linear'}"
+Hyperband,KNN,"{'n_neighbors': 7, 'weights': 'distance'}"
+Hyperband,ANN,"{'epochs': 45, 'batch_size': 59, 'units': 160, 'activation': 'tanh', 'optimizer': 'rmsprop'}"
+Bayesian Optimization,Random Forest,"OrderedDict([('criterion', 'entropy'), ('max_depth', 48), ('max_features', 12), ('min_samples_leaf', 4), ('min_samples_split', 3), ('n_estimators', 68)])"
+Bayesian Optimization,SVM,"OrderedDict([('C', 4.52478460317241), ('kernel', 'rbf')])"
+Bayesian Optimization,KNN,"OrderedDict([('n_neighbors', 7)])"
+Bayesian Optimization,ANN,"OrderedDict([('activation', 'relu'), ('batch_size', 32), ('epochs', 20), ('neurons', 63), ('optimizer', 'adam'), ('patience', 12)])"
+Sequential Model-Based Optimization (skopt),Random Forest,"{'n_estimators': 100, 'max_depth': 39, 'max_features': 13, 'min_samples_split': 4, 'min_samples_leaf': 1, 'criterion': 'entropy'}"
+Sequential Model-Based Optimization (skopt),SVM,"{'C': 50.0, 'kernel': 'rbf'}"
+Sequential Model-Based Optimization (skopt),KNN,{'n_neighbors': 17}
+Sequential Model-Based Optimization (skopt),ANN,"{'optimizer': 'adam', 'activation': 'relu', 'neurons': 86, 'patience': 11, 'batch_size': 35, 'epochs': 50}"
+Bayesian Optimization (scikit-optimize),Random Forest,"{'criterion': 'entropy', 'max_depth': 11.0, 'max_features': 16.0, 'min_samples_leaf': 5.0, 'min_samples_split': 5.0, 'n_estimators': 76.0}"
+Bayesian Optimization (scikit-optimize),SVM,"{'C': 50.0, 'kernel': 'rbf'}"
+Bayesian Optimization (scikit-optimize),KNN,{'n_neighbors': 18.0}
+Bayesian Optimization (scikit-optimize),ANN,"{'activation': 'relu', 'batch_size': 16.0, 'epochs': 30.0, 'loss': 'sparse_categorical_crossentropy', 'neurons': 100.0, 'optimizer': 'rmsprop', 'patience': 3.0}"
+Particle Swarm Optimization,Random Forest,"{'n_estimators': 44.013671875, 'max_features': 8.9365234375, 'max_depth': 49.4287109375, 'min_samples_split': 2.2373046875, 'min_samples_leaf': 1.205078125, 'criterion': 0.5634765625}"
+Particle Swarm Optimization,SVM,"{'C': 32.2509765625, 'kernel': 2.806640625}"
+Particle Swarm Optimization,KNN,{'n_neighbors': 4.080078125}
+Particle Swarm Optimization,ANN,"{'optimizer': 2.4931640625, 'activation': 0.470703125, 'batch_size': 1.693359375, 'neurons': 64.404296875, 'epochs': 45.458984375, 'patience': 16.5634765625}"
+Genetic Algorithm,Random Forest,"{'n_estimators': 67, 'max_features': 5, 'max_depth': 19, 'min_samples_split': 7, 'min_samples_leaf': 4, 'criterion': 'entropy'}"
+Genetic Algorithm,SVM,"{'C': 5.580976446946101, 'kernel': 'rbf'}"
+Genetic Algorithm,KNN,{'n_neighbors': 2}
+Genetic Algorithm,ANN,"{'model__optimizer': 'adam', 'model__activation': 'relu', 'model__neurons': 82, 'batch_size': 64, 'epochs': 20}"
+TPOT,Random Forest,"Pipeline(steps=[('randomforestclassifier',
+                 RandomForestClassifier(max_depth=20, max_features=2,
+                                        min_samples_leaf=3,
+                                        min_samples_split=10,
+                                        n_estimators=115))])"
+TPOT,SVM,"Pipeline(steps=[('svc', SVC(C=14.041477127126173, probability=True))])"
+TPOT,KNN,"Pipeline(steps=[('kneighborsclassifier', KNeighborsClassifier(n_neighbors=3))])"
+TPOT,ANN,"Pipeline(steps=[('mlpclassifier',
+                 MLPClassifier(activation='tanh', alpha=0.1,
+                               hidden_layer_sizes=(100, 50), solver='lbfgs'))])"

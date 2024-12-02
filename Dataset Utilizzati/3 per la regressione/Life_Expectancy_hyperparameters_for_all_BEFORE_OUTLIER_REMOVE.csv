@@ -1,0 +1,37 @@
+Procedura,Algoritmo,Best Params
+Grid Search,Random Forest,"{'max_depth': 30, 'n_estimators': 30}"
+Grid Search,SVM,"{'C': 100, 'epsilon': 1, 'kernel': 'rbf'}"
+Grid Search,KNN,{'n_neighbors': 3}
+Grid Search,ANN,"{'activation': 'relu', 'batch_size': 16, 'epochs': 50, 'loss': 'mse', 'neurons': 32, 'optimizer': 'adam', 'patience': 5}"
+Random Search,Random Forest,"{'criterion': 'friedman_mse', 'max_depth': 41, 'max_features': 9, 'min_samples_leaf': 1, 'min_samples_split': 3, 'n_estimators': 32}"
+Random Search,SVM,"{'C': 49.677971223307594, 'epsilon': 0.6601350511249023, 'kernel': 'poly'}"
+Random Search,KNN,{'n_neighbors': 4}
+Random Search,ANN,"{'activation': 'relu', 'batch_size': 16, 'epochs': 50, 'loss': 'mse', 'neurons': 70, 'optimizer': 'rmsprop', 'patience': 3}"
+Hyperband,Random Forest,"{'criterion': 'friedman_mse', 'max_depth': 26, 'max_features': 10, 'min_samples_leaf': 1, 'min_samples_split': 4}"
+Hyperband,SVM,"{'C': 0.9495710534507421, 'gamma': 'scale', 'kernel': 'rbf'}"
+Hyperband,KNN,{'n_neighbors': 3}
+Hyperband,ANN,"{'activation': 'tanh', 'alpha': 0.06916799545513805, 'batch_size': 32, 'early_stopping': True, 'hidden_layer_sizes': (43,), 'learning_rate': 'adaptive', 'learning_rate_init': 0.051588115054237216, 'max_iter': 100, 'solver': 'adam', 'validation_fraction': 0.1}"
+Bayesian Optimization,Random Forest,"OrderedDict([('criterion', 'friedman_mse'), ('max_depth', 18), ('max_features', 7), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 75)])"
+Bayesian Optimization,SVM,"OrderedDict([('C', 50.0), ('epsilon', 1.0), ('kernel', 'rbf')])"
+Bayesian Optimization,KNN,"OrderedDict([('n_neighbors', 5)])"
+Bayesian Optimization,ANN,"OrderedDict([('activation', 'tanh'), ('batch_size', 16), ('epochs', 50), ('loss', 'mse'), ('neurons', 86), ('optimizer', 'rmsprop'), ('patience', 6)])"
+Sequential Model-Based Optimization (skopt),Random Forest,"[100, 27, 7, 2, 1, 'friedman_mse']"
+Sequential Model-Based Optimization (skopt),SVM,"[42.51533520042216, 'rbf', 0.38438170729269994]"
+Sequential Model-Based Optimization (skopt),KNN,[2]
+Sequential Model-Based Optimization (skopt),ANN,"{'optimizer': 'rmsprop', 'activation': 'tanh', 'neurons': 100, 'patience': 6, 'loss': 'mse'}"
+Bayesian Optimization TPE,Random Forest,"{'criterion': 'friedman_mse', 'max_depth': 19.0, 'max_features': 12.0, 'min_samples_leaf': 2.0, 'min_samples_split': 4.0, 'n_estimators': 67.0}"
+Bayesian Optimization TPE,SVM,"{'C': 56.103542503872205, 'epsilon': 0.6743665541262003, 'kernel': 'rbf'}"
+Bayesian Optimization TPE,KNN,{'n_neighbors': 3.0}
+Bayesian Optimization TPE,ANN,"{'activation': 'relu', 'batch_size': 48.0, 'epochs': 50.0, 'loss': 'mse', 'neurons': 90.0, 'optimizer': 'adam', 'patience': 3.0}"
+Particle Swarm Optimization,Random Forest,"{'n_estimators': 61.50390625, 'max_features': 8.0703125, 'max_depth': 21.611328125, 'min_samples_split': 5.708984375, 'min_samples_leaf': 1.72265625}"
+Particle Swarm Optimization,SVM,"{'C': 48.82758391036346, 'kernel': 1.5369140625000002, 'epsilon': 0.5578570661498006}"
+Particle Swarm Optimization,KNN,{'n_neighbors': 4.53466796875}
+Particle Swarm Optimization,ANN,"{'optimizer': 0.51171875, 'activation': 0.83203125, 'loss': 0.28515625, 'batch_size': 0.44140625, 'neurons': 96.8359375, 'epochs': 47.5390625, 'patience': 19.40234375}"
+Genetic Algorithm,Random Forest,"{'n_estimators': 93, 'max_features': 8, 'max_depth': 24, 'min_samples_split': 3, 'min_samples_leaf': 2, 'criterion': 'squared_error'}"
+Genetic Algorithm,SVM,"{'C': 47.56282040701993, 'kernel': 'poly', 'epsilon': 0.9394641803741561}"
+Genetic Algorithm,KNN,{'n_neighbors': 4}
+Genetic Algorithm,ANN,"{'optimizer': 'adam', 'activation': 'tanh', 'loss': 'mse', 'batch_size': 16, 'neurons': 95, 'epochs': 50, 'patience': 18}"
+TPOT,Random Forest,"{'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 93, 'max_features': 12, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 69, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}"
+TPOT,SVM,"{'C': 42.21158149857552, 'cache_size': 200, 'coef0': 0.0, 'degree': 3, 'epsilon': 0.7311598863796451, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': -1, 'shrinking': True, 'tol': 0.001, 'verbose': False}"
+TPOT,KNN,"{'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 3, 'p': 2, 'weights': 'uniform'}"
+TPOT,ANN,"{'activation': 'logistic', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (50,), 'learning_rate': 'invscaling', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 200, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'solver': 'lbfgs', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}"

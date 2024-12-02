@@ -1,0 +1,43 @@
+Procedura,Algoritmo,Best Params
+Grid Search,Random Forest,"{'criterion': 'gini', 'max_depth': 15, 'n_estimators': 30}"
+Grid Search,SVM,"{'C': 10, 'kernel': 'rbf'}"
+Grid Search,KNN,{'n_neighbors': 15}
+Grid Search,ANN,"{'activation': 'tanh', 'batch_size': 16, 'epochs': 20, 'optimizer': 'rmsprop'}"
+Random Search,Random Forest,"{'criterion': 'gini', 'max_depth': 12, 'max_features': 19, 'min_samples_leaf': 8, 'min_samples_split': 8, 'n_estimators': 53}"
+Random Search,SVM,"{'C': 14.641358944658068, 'kernel': 'rbf'}"
+Random Search,KNN,{'n_neighbors': 13}
+Random Search,ANN,"{'activation': 'tanh', 'batch_size': 32, 'epochs': 50, 'neurons': 79, 'optimizer': 'adam', 'patience': 18}"
+Hyperband,Random Forest,"{'n_estimators': 86, 'max_depth': 46, 'max_features': 2, 'min_samples_split': 8, 'min_samples_leaf': 9, 'criterion': 'entropy'}"
+Hyperband,SVM,"{'C': 7.602716937562915, 'kernel': 'rbf'}"
+Hyperband,KNN,{'n_neighbors': 16}
+Hyperband,ANN,"{'optimizer': 'rmsprop', 'activation': 'relu', 'batch_size': 16, 'neurons': 73, 'epochs': 20, 'patience': 14}"
+Bayesian Optimization,Random Forest,"OrderedDict([('criterion', 'entropy'), ('max_depth', 14), ('max_features', 40), ('min_samples_leaf', 11), ('min_samples_split', 3), ('n_estimators', 73)])"
+Bayesian Optimization,SVM,"OrderedDict([('C', 15.416356602921832), ('kernel', 'rbf')])"
+Bayesian Optimization,KNN,"OrderedDict([('n_neighbors', 13)])"
+Bayesian Optimization,ANN,"OrderedDict([('activation', 'tanh'), ('batch_size', 16), ('epochs', 20), ('neurons', 48), ('optimizer', 'adam'), ('patience', 13)])"
+Sequential Model-Based Optimization (skopt),Random Forest,"{'n_estimators': 71, 'max_depth': 25, 'max_features': 27, 'min_samples_split': 6, 'min_samples_leaf': 11, 'criterion': 'entropy'}"
+Sequential Model-Based Optimization (skopt),SVM,"{'C': 18.018858893480306, 'kernel': 'rbf'}"
+Sequential Model-Based Optimization (skopt),KNN,{'n_neighbors': 17}
+Sequential Model-Based Optimization (skopt),ANN,"{'optimizer': 'lbfgs', 'activation': 'relu', 'neurons': 10, 'patience': 4, 'batch_size': 28, 'epochs': 20}"
+Bayesian Optimization (scikit-optimize),Random Forest,"{'criterion': 'entropy', 'max_depth': 48.0, 'max_features': 12.0, 'min_samples_leaf': 11.0, 'min_samples_split': 3.0, 'n_estimators': 31.0}"
+Bayesian Optimization (scikit-optimize),SVM,"{'C': 16.876434059259253, 'kernel': 'rbf'}"
+Bayesian Optimization (scikit-optimize),KNN,{'n_neighbors': 15.0}
+Bayesian Optimization (scikit-optimize),ANN,"{'activation': 'tanh', 'batch_size': 48.0, 'epochs': 20.0, 'loss': 'sparse_categorical_crossentropy', 'neurons': 90.0, 'optimizer': 'rmsprop', 'patience': 6.0}"
+Particle Swarm Optimization,Random Forest,"{'n_estimators': 40.6298828125, 'max_features': 3.36865234375, 'max_depth': 35.21240234375, 'min_samples_split': 7.33935546875, 'min_samples_leaf': 10.1552734375, 'criterion': 0.24658203125}"
+Particle Swarm Optimization,SVM,"{'C': 20.2587890625, 'kernel': 2.628515625}"
+Particle Swarm Optimization,KNN,{'n_neighbors': 15.2685546875}
+Particle Swarm Optimization,ANN,"{'optimizer': 2.959852584140054, 'activation': 1.5177608228087982, 'batch_size': 1.1277160007021783, 'neurons': 54.9912109375, 'epochs': 23.71060671552415, 'patience': 10.927073251116854}"
+Genetic Algorithm,Random Forest,"{'n_estimators': 72, 'max_features': 1, 'max_depth': 48, 'min_samples_split': 10, 'min_samples_leaf': 1, 'criterion': 'gini'}"
+Genetic Algorithm,SVM,"{'C': 17.76713716694156, 'kernel': 'rbf'}"
+Genetic Algorithm,KNN,{'n_neighbors': 13}
+Genetic Algorithm,ANN,"{'model__optimizer': 'adam', 'model__activation': 'relu', 'model__neurons': 24, 'batch_size': 64, 'epochs': 50}"
+TPOT,Random Forest,"Pipeline(steps=[('randomforestclassifier',
+                 RandomForestClassifier(max_depth=51, max_features=36,
+                                        min_samples_leaf=10,
+                                        min_samples_split=8,
+                                        n_estimators=58))])"
+TPOT,SVM,"Pipeline(steps=[('svc', SVC(C=15.888764602729772, probability=True))])"
+TPOT,KNN,"Pipeline(steps=[('kneighborsclassifier', KNeighborsClassifier(n_neighbors=13))])"
+TPOT,ANN,"Pipeline(steps=[('mlpclassifier',
+                 MLPClassifier(alpha=0.001, hidden_layer_sizes=(50,),
+                               learning_rate='adaptive'))])"

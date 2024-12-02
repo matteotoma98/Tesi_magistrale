@@ -1,0 +1,46 @@
+Procedura,Algoritmo,Best Params
+Grid Search,Random Forest,"{'criterion': 'entropy', 'max_depth': 30, 'n_estimators': 30}"
+Grid Search,SVM,"{'C': 100, 'kernel': 'rbf'}"
+Grid Search,KNN,{'n_neighbors': 3}
+Grid Search,ANN,"{'activation': 'relu', 'batch_size': 32, 'epochs': 20, 'optimizer': 'rmsprop'}"
+Random Search,Random Forest,"{'criterion': 'entropy', 'max_depth': 44, 'max_features': 2, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 30}"
+Random Search,SVM,"{'C': 49.24489183315505, 'kernel': 'rbf'}"
+Random Search,KNN,{'n_neighbors': 1}
+Random Search,ANN,"{'activation': 'relu', 'batch_size': 16, 'epochs': 50, 'neurons': 84, 'optimizer': 'rmsprop', 'patience': 9}"
+Hyperband,Random Forest,"{'n_estimators': 71, 'max_depth': 31, 'max_features': 4, 'min_samples_split': 3, 'min_samples_leaf': 7, 'criterion': 'entropy'}"
+Hyperband,SVM,"{'C': 0.9600849688605729, 'kernel': 'rbf'}"
+Hyperband,KNN,{'n_neighbors': 16}
+Hyperband,ANN,"{'optimizer': 'adam', 'activation': 'relu', 'batch_size': 64, 'neurons': 43, 'epochs': 50, 'patience': 3}"
+Bayesian Optimization,Random Forest,"OrderedDict([('criterion', 'entropy'), ('max_depth', 37), ('max_features', 40), ('min_samples_leaf', 1), ('min_samples_split', 3), ('n_estimators', 70)])"
+Bayesian Optimization,SVM,"OrderedDict([('C', 50.0), ('kernel', 'rbf')])"
+Bayesian Optimization,KNN,"OrderedDict([('n_neighbors', 3)])"
+Bayesian Optimization,ANN,"OrderedDict([('activation', 'relu'), ('batch_size', 16), ('epochs', 50), ('neurons', 89), ('optimizer', 'rmsprop'), ('patience', 17)])"
+Sequential Model-Based Optimization (skopt),Random Forest,"{'n_estimators': 87, 'max_depth': 50, 'max_features': 64, 'min_samples_split': 9, 'min_samples_leaf': 4, 'criterion': 'gini'}"
+Sequential Model-Based Optimization (skopt),SVM,"{'C': 50.0, 'kernel': 'rbf'}"
+Sequential Model-Based Optimization (skopt),KNN,{'n_neighbors': 17}
+Sequential Model-Based Optimization (skopt),ANN,"{'optimizer': 'lbfgs', 'activation': 'tanh', 'neurons': 100, 'patience': 8, 'batch_size': 38, 'epochs': 50}"
+Bayesian Optimization (scikit-optimize),Random Forest,"{'criterion': 'gini', 'max_depth': 36.0, 'max_features': 12.0, 'min_samples_leaf': 2.0, 'min_samples_split': 9.0, 'n_estimators': 43.0}"
+Bayesian Optimization (scikit-optimize),SVM,"{'C': 50.0, 'kernel': 'rbf'}"
+Bayesian Optimization (scikit-optimize),KNN,{'n_neighbors': 3.0}
+Bayesian Optimization (scikit-optimize),ANN,"{'activation': 'relu', 'batch_size': 16.0, 'epochs': 50.0, 'loss': 'sparse_categorical_crossentropy', 'neurons': 80.0, 'optimizer': 'rmsprop', 'patience': 12.0}"
+Particle Swarm Optimization,Random Forest,"{'n_estimators': 67.4453125, 'max_features': 21.032031250000003, 'max_depth': 18.37648692515446, 'min_samples_split': 7.53359375, 'min_samples_leaf': 1.6015625, 'criterion': 0.90078125}"
+Particle Swarm Optimization,SVM,"{'C': 31.884765625, 'kernel': 2.83984375}"
+Particle Swarm Optimization,KNN,{'n_neighbors': 1.51025390625}
+Particle Swarm Optimization,ANN,"{'optimizer': 2.47236328125, 'activation': 0.6673178298530299, 'batch_size': 1.0970617867743397, 'neurons': 22.313476562500004, 'epochs': 46.477273107598414, 'patience': 14.91826171875}"
+Genetic Algorithm,Random Forest,"{'n_estimators': 79, 'max_features': 1, 'max_depth': 17, 'min_samples_split': 6, 'min_samples_leaf': 1, 'criterion': 'gini'}"
+Genetic Algorithm,SVM,"{'C': 49.290906097179096, 'kernel': 'rbf'}"
+Genetic Algorithm,KNN,{'n_neighbors': 1}
+Genetic Algorithm,ANN,"{'model__optimizer': 'adam', 'model__activation': 'relu', 'model__neurons': 84, 'batch_size': 32, 'epochs': 50}"
+TPOT,Random Forest,"Pipeline(steps=[('randomforestclassifier',
+                 RandomForestClassifier(max_depth=13, max_features=18,
+                                        min_samples_split=7,
+                                        n_estimators=169))])"
+TPOT,SVM,"Pipeline(steps=[('stackingestimator',
+                 StackingEstimator(estimator=SVC(C=32.75843450158588,
+                                                 probability=True))),
+                ('svc', SVC(C=43.23097317756594, probability=True))])"
+TPOT,KNN,"Pipeline(steps=[('kneighborsclassifier', KNeighborsClassifier(n_neighbors=3))])"
+TPOT,ANN,"Pipeline(steps=[('mlpclassifier',
+                 MLPClassifier(activation='tanh', alpha=0.01,
+                               hidden_layer_sizes=(50, 50),
+                               learning_rate='invscaling', solver='lbfgs'))])"

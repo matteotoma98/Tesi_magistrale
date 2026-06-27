@@ -37,8 +37,3 @@ Raccoglie le conclusioni principali, evidenziando come l’adozione di queste li
 
 - Migliorare significativamente le prestazioni dei modelli
 - Facilitare un processo decisionale più consapevole durante le fasi di progettazione e sviluppo
-
-## Risorse
-
-I dataset e i codici utilizzati sono disponibili al seguente link:  
-[Google Drive - Dataset e Codici](https://drive.google.com/drive/folders/1Ps4RoAHoQrDoIuCPd7XHWGqxo4H1DIJD?usp=drive_link)
